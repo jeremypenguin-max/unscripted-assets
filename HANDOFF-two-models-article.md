@@ -1,8 +1,12 @@
 # HANDOFF — "Two Models, One Question" article + social campaign
 
-**Status: OPEN.** Article is written and committed. Publishing and social
-scheduling are NOT done. A desktop Claude Code instance with the Royal MCP
-connector can finish this end to end.
+**Status: PUBLISHED, social posts STAGED (awaiting Jeremy's go-ahead).**
+Article live 2026-09-17 at https://seoarcade.com/two-models-one-question-what-llms-look-for/
+(seoarcade post 6736, category SEO, via WP REST from a desktop session). Added a
+"pages organized around problems" section crediting Greg Digneo / Content Guppy at
+Jeremy's request, plus 5 internal links. Models are named (Jeremy did not take the
+anonymized variant). Step 3 is prepared below in **US Central** time (Jeremy's
+TidyCal timezone is America/Chicago, not ET) and waits on one explicit yes.
 
 Written by a Claude Code *web/cloud* session on 2026-09-17. That session had
 Blotato, Black Twist, Riverside, GitHub, Gmail, Calendar and Drive — but **no
@@ -17,8 +21,8 @@ and 2 below were not executed there.
 |---|---|---|
 | The article | `two-models-one-question-what-llms-look-for.md` (repo root) | Done, ~2,000 words |
 | Social copy | This file, section "Social copy" | Done, char-verified |
-| Published URL | — | **MISSING — the blocker** |
-| Scheduled posts | — | Not scheduled |
+| Published URL | https://seoarcade.com/two-models-one-question-what-llms-look-for/ | **LIVE 2026-09-17** |
+| Scheduled posts | — | Staged with URL + CT times, not yet scheduled (needs go-ahead) |
 
 ---
 
@@ -38,7 +42,7 @@ Jeremy was offered an anonymized "Model A / Model B" variant and has not
 answered. Ask before publishing if he hasn't said.
 
 ### Step 2 — Capture the live URL
-Everything in step 3 substitutes it for `{{URL}}`.
+Everything in step 3 substitutes it for `https://seoarcade.com/two-models-one-question-what-llms-look-for/`.
 
 ### Step 3 — Schedule 4 social posts via Blotato
 
@@ -48,13 +52,13 @@ over 3 days**. He explicitly did NOT select Threads, @unscriptedseo, or
 
 | # | When (ET) | UTC (`scheduledTime`) | Platform | accountId | Extra fields |
 |---|---|---|---|---|---|
-| 1 | Mon 2026-09-21 09:00 | `2026-09-21T13:00:00Z` | `linkedin` | `22188` | none (personal profile) |
-| 2 | Tue 2026-09-22 08:30 | `2026-09-22T12:30:00Z` | `twitter` | `18805` (@seoarcade) | none |
-| 3 | Wed 2026-09-23 11:00 | `2026-09-23T15:00:00Z` | `facebook` | `32956` | `pageId: 113061854167538` (SEO Arcade) |
-| 4 | Wed 2026-09-23 16:30 | `2026-09-23T20:30:00Z` | `twitter` | `18805` (@seoarcade) | none |
+| 1 | Mon 2026-09-21 09:00 CT | `2026-09-21T14:00:00Z` | `linkedin` | `22188` | none (personal profile) |
+| 2 | Tue 2026-09-22 08:30 CT | `2026-09-22T13:30:00Z` | `twitter` | `18805` (@seoarcade) | none |
+| 3 | Wed 2026-09-23 11:00 CT | `2026-09-23T16:00:00Z` | `facebook` | `32956` | `pageId: 113061854167538` (SEO Arcade) |
+| 4 | Wed 2026-09-23 16:30 CT | `2026-09-23T21:30:00Z` | `twitter` | `18805` (@seoarcade) | none |
 
-**Timezone is an ASSUMPTION — US Eastern (EDT, UTC-4). Confirm with Jeremy
-before scheduling.** If he's not on ET, recompute every UTC value above.
+**Timezone resolved 2026-09-17: US Central (CDT, UTC-5), from Jeremy's TidyCal
+bookings (America/Chicago). UTC values above are recomputed for CT.**
 
 Schedule starts Monday rather than the day of writing because a Thursday launch
 would have put the LinkedIn long-form post on a Saturday.
@@ -87,7 +91,7 @@ Where they split is the useful part. One described searching for disagreement as
 If that's right, the goal isn't to be the consensus. It's to be one of the positions that defines the axis of the real debate.
 
 Full write-up, both answers quoted at length, plus the method limitations:
-{{URL}}
+https://seoarcade.com/two-models-one-question-what-llms-look-for/
 
 ### Post 2 — X @seoarcade (18805) — 272/280 with URL
 
@@ -97,7 +101,7 @@ Both said the same thing: they don't search your query. They decompose it, then 
 
 The keyword you optimized for may never get issued.
 
-{{URL}}
+https://seoarcade.com/two-models-one-question-what-llms-look-for/
 
 ### Post 3 — Facebook, SEO Arcade page (32956 / 113061854167538)
 
@@ -108,7 +112,7 @@ Both said they don't search the question as asked — they break it apart and go
 Both also admitted they can't fully see their own ranking, which nobody asked them to do.
 
 Both answers quoted in full, plus what it means for how you write:
-{{URL}}
+https://seoarcade.com/two-models-one-question-what-llms-look-for/
 
 ### Post 4 — X @seoarcade (18805) — 259/280 with URL
 
@@ -118,7 +122,7 @@ One model said this unprompted:
 
 Settled-question content can lose before retrieval starts.
 
-{{URL}}
+https://seoarcade.com/two-models-one-question-what-llms-look-for/
 
 **X character-count note:** X counts every URL as a fixed 23 characters
 regardless of real length. Both X posts were verified against that rule. If you

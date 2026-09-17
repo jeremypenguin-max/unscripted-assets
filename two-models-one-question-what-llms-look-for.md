@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| **Published** | 2026-09-17 |
+| **Published** | 2026-09-17 — https://seoarcade.com/two-models-one-question-what-llms-look-for/ |
 | **Site** | SEO Arcade |
 | **Author** | Jeremy Rivera |
 | **Models** | Claude Opus 5 and Claude Fable 5.1 |
@@ -12,11 +12,11 @@
 
 ## Why this experiment exists
 
-Most "how to optimize for AI search" advice is written by people guessing at the mechanism from the outside — watching citations appear and reverse-engineering a story. That's legitimate observational work, but it has a ceiling.
+Most "how to optimize for AI search" advice is written by people guessing at the mechanism from the outside — [watching citations appear and reverse-engineering a story](https://seoarcade.com/naperville-test-chatgpt-citation-sources/). That's legitimate observational work, but it has a ceiling.
 
 There's a second, cheaper source of evidence that almost nobody uses systematically: ask the models directly, in a way that constrains them to describe *behavior* rather than architecture.
 
-The distinction matters. An LLM asked "how do you rank sources?" will produce a plausible-sounding answer about relevance and authority that may be entirely confabulated. An LLM asked "when you fan out a query, what do you actually search for, and what makes a returned result useful to you?" is describing something much closer to observable action — it generates those queries in the open and reads those results in the open.
+The distinction matters. An LLM asked "how do you rank sources?" will produce a plausible-sounding answer about relevance and authority that may be entirely confabulated. An LLM asked "when you [fan out a query](https://seoarcade.com/seo-sop-query-fan-out-to-placements/), what do you actually search for, and what makes a returned result useful to you?" is describing something much closer to observable action — it generates those queries in the open and reads those results in the open.
 
 So that was the constraint. Here's the question, verbatim:
 
@@ -87,7 +87,7 @@ Its stated ideal source set: one or two surveys to map the territory, several de
 Four things both models said independently, without seeing each other. Independent convergence is the strongest signal in the whole experiment:
 
 1. **Neither one searches your query.** Both decompose first. The literal string you optimized for may never be issued as a search.
-2. **Both deliberately search for disagreement.** Opus fans out adversarially on contested questions; Fable adds a skeptical query looking for people who say the standard advice is wrong. Contrarian, well-argued content isn't a niche play — it's an explicit retrieval target.
+2. **Both deliberately search for disagreement.** Opus fans out adversarially on contested questions; Fable adds a skeptical query looking for people who say the standard advice is wrong. Contrarian, well-argued content isn't a niche play (Malte Landwehr made the same point from the consensus side in [what actually works in LLM search](https://seoarcade.com/what-actually-works-in-llm-search-malte-landwehr-on-consensus-fan-outs-and-ai-slop/)) — it's an explicit retrieval target.
 3. **Roundups orient, depth decides.** Both use surveys early to map the space and both said such content rarely survives into the answer given to the user.
 4. **Both volunteered the same introspection limit.** Opus: "I can describe my behavior more reliably than I can describe my mechanism." Fable: "There's a layer of ranking that happens below what I can introspect on, and I would be guessing if I claimed to know exactly what tips it." Neither was asked to hedge. Both did.
 
@@ -99,18 +99,32 @@ The two answers are not redundant. They solve different halves of the problem.
 
 **Opus's contribution is upstream.** Its mode-selection framing says the fan-out shape is fixed *before* retrieval, based on whether the model reads your question as determinate or contested. That implies content strategy is partly a matter of matching content type to question type: definitive reference content for settled questions, tradeoff-and-failure-mode content for contested ones. Publishing a comprehensive roundup against a determinate question is actively counterproductive — Opus said it "dilutes" the confirmation it's seeking.
 
-Opus also raised the retrieval-gate problem no ranking advice addresses: if the model is confident and the question isn't time-sensitive, **no search happens at all**. Content aimed at evergreen, well-settled questions may lose before any ranking occurs. The winnable queries are the uncertain, recent and specific ones.
+Opus also raised the retrieval-gate problem no ranking advice addresses: if the model is confident and the question isn't time-sensitive, **no search happens at all**. Content aimed at evergreen, well-settled questions may lose before any ranking occurs, which is the same gate we hit in [getting recommended by an LLM before you are in its training data](https://seoarcade.com/get-recommended-llm-before-training-data/). The winnable queries are the uncertain, recent and specific ones.
 
 **Fable's contribution is downstream.** Its "disagreement is where the real answer lives" claim is a genuinely different strategic instruction. Opus described searching for disagreement as a *method*; Fable described a source set containing disagreement as the *ideal end state*. If that's right, the goal isn't to be the consensus — it's to be one of the two or three positions that define the axis of the real debate. A well-argued minority position may have a structural advantage over a well-argued majority one, because it supplies the tension the model is looking for.
 
 Fable's verification framing is also sharper than Opus's authority framing. "Does this page contain something I can check against another source" is a more testable editorial standard than "is this source credible."
+
+## Where this points: pages organized around problems
+
+While this was being written, [Greg Digneo of Content Guppy](https://contentguppy.com) sent over a thought that lands in the same place from the publisher's side:
+
+> I think websites are going to be organized around problems, not necessarily industries or solutions. For instance, an SEO agency might have pages like "organic traffic going down" or "paid isn't working like it used to."
+
+Read that against what the two models said. Fable's first move is to find "the real question underneath your question." Opus decides the shape of the search from whether it reads the question as determinate or contested. Neither issues your keyword; both issue the sub-questions a person with a problem would ask.
+
+A page called *Organic traffic going down* is already one of those sub-questions. It commits to a situation, it invites the specific failure mode, and it is the natural place to take a position on what usually causes it and what you would give up by fixing it one way rather than another. A page called *SEO services* is none of those things. It is an industry label, and the models told us they can generate the option list under an industry label for free.
+
+Greg's framing also solves the retrieval-gate problem Opus raised. "Organic traffic going down" is uncertain, recent and specific by definition, which is exactly the class of question that triggers a search in the first place. That is the version of this idea to test against your own site: not "what do we sell," but "what is going wrong for the person who ends up hiring us, and does that page exist."
+
+We covered the agency side of this with Greg on the podcast in [Why Visibility Is the New SEO](https://unscriptedseo.com/greg-digneo-visibility-is-the-new-seo-unscripted-seo-podcast/).
 
 ## What to do with this
 
 Combining both answers into an editorial checklist:
 
 - **Take a position and name what you gave up.** Both models discount noncommittal content. "We chose X over Y, and here's the query pattern that made it obvious" outperforms a neutral comparison table.
-- **Make claims checkable.** A number with a stated methodology beats an adjective. Fable's test: could someone tell if this were fabricated? If not, it's not doing work.
+- **Make claims checkable.** This is the [information gain](https://seoarcade.com/seo-strategy-library/information-gain-content/) test in one sentence. A number with a stated methodology beats an adjective. Fable's test: could someone tell if this were fabricated? If not, it's not doing work.
 - **Name the specific failure mode**, with the error text or the conditions. Opus called this near-unbeatable, because it maps to the user's actual situation rather than the abstract category.
 - **Say when your recommendation doesn't apply.** Both models raised this unprompted. Scope conditions are a quality signal, not a hedge.
 - **Date and version everything.** Unqualified claims get discounted first.
