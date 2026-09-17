@@ -1,6 +1,6 @@
 # HANDOFF — "Two Models, One Question" article + social campaign
 
-**Status: PUBLISHED, social posts STAGED (awaiting Jeremy's go-ahead).**
+**Status: DONE.** Jeremy said "Go for social" 2026-09-17; all four posts are scheduled in Blotato.
 Article live 2026-09-17 at https://seoarcade.com/two-models-one-question-what-llms-look-for/
 (seoarcade post 6736, category SEO, via WP REST from a desktop session). Added a
 "pages organized around problems" section crediting Greg Digneo / Content Guppy at
@@ -22,7 +22,7 @@ and 2 below were not executed there.
 | The article | `two-models-one-question-what-llms-look-for.md` (repo root) | Done, ~2,000 words |
 | Social copy | This file, section "Social copy" | Done, char-verified |
 | Published URL | https://seoarcade.com/two-models-one-question-what-llms-look-for/ | **LIVE 2026-09-17** |
-| Scheduled posts | — | Staged with URL + CT times, not yet scheduled (needs go-ahead) |
+| Scheduled posts | Blotato `4aa7f6f2` (LinkedIn Mon) · `66ad3294` (X Tue) · `d8b05173` (FB Wed) · `063d1817` (X Wed) | **SCHEDULED 2026-09-17** |
 
 ---
 
@@ -124,8 +124,9 @@ Settled-question content can lose before retrieval starts.
 
 https://seoarcade.com/two-models-one-question-what-llms-look-for/
 
-**X character-count note:** X counts every URL as a fixed 23 characters
-regardless of real length. Both X posts were verified against that rule. If you
+**X character-count note (corrected 2026-09-17):** Blotato rejects on RAW
+character count, and the 66-char URL counts in full, not as 23. Both X posts
+had to be trimmed to fit 280 raw; the scheduled text is the trimmed version. If you
 edit either one, re-verify — the first drafts were 38 and 25 characters over.
 
 ---
